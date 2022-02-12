@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
@@ -23,10 +23,10 @@
         <input required placeholder="Prénom" class="input" required name="name" type="text" />
         <input required placeholder="Nom de famille" class="input" required name="surname" type="text" />
       </div>
-      <input required placeholder="Numéro de mobile ou e-mail" class="input" required name="contact" type="text" />
-      <input required placeholder="Nouveau mot de passe" class="input" required name="pwd" type="password" />
+      <input name="contact" required placeholder="Numéro de mobile ou e-mail" class="input" required name="contact" type="text" />
+      <input name="pwd" required placeholder="Nouveau mot de passe" class="input" required name="pwd" type="password" />
     </div>
-    <p class="txt-head--sm">Date de naissance <img class="head-icon" src="./quest_mark.png"></p>
+    <p class="txt-head--sm">Date de naissance <img class="head-icon" src="./assets/quest_mark.png"></p>
     <div class="fl-row">
       <select class="input-select" name="day">
         <?php
@@ -56,11 +56,11 @@
         ?>
       </select>
     </div>
-    <p class="txt-head--sm">Genre <img class="head-icon" src="./quest_mark.png"></p>
+    <p class="txt-head--sm">Genre <img class="head-icon" src="./assets/quest_mark.png"></p>
     <div class="fl-row inputs-gap">
-      <label class="input-radio">Femme <input required name="genre" type="radio"></label>
-      <label class="input-radio">Homme <input required name="genre" type="radio"></label>
-      <label class="input-radio">Personnalisé <input required name="genre" type="radio"></label>
+      <label class="input-radio">Femme <input value="f" required name="genre" type="radio"></label>
+      <label class="input-radio">Homme <input value="m" required name="genre" type="radio"></label>
+      <label class="input-radio">Personnalisé <input required value="o" name="genre" type="radio"></label>
     </div>
     <p class="txt-foot">En cliquant sur S’inscrire, vous acceptez nos
       <a class="foot-link" href="https://fr-fr.facebook.com/legal/terms/update" target="_blank">Conditions générales</a>.

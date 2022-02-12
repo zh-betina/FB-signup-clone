@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'SFPro Display';
-    src: url('./FontsFree-Net-SFProDisplay-Bold.ttf') format("truetype");
+    src: url('./assets/FontsFree-Net-SFProDisplay-Bold.ttf') format("truetype");
 }
 
 @font-face {
     font-family: 'SFPro Regular';
-    src: url('./FontsFree-Net-SFProText-Regular.ttf') format("truetype");
+    src: url('./assets/FontsFree-Net-SFProText-Regular.ttf') format("truetype");
 }
 
 html,
@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    background-image: url(./fb_bgr.png);
+    background-image: url(./assets/fb_bgr.png);
     background-repeat: no-repeat;
     background-size: 70%;
     background-color: #f0f2f5;
@@ -62,6 +62,10 @@ p, h1 {
     display: flex;
     flex-direction: column;
     padding: 16px;
+}
+
+.fb-form.fb-response {
+    height: 290px;
 }
 
 .input {
@@ -124,6 +128,13 @@ p, h1 {
     width: 15px;
 }
 
+.txt-response {
+    font-family: 'SFPro Display';
+    font-size: 20px;
+    text-align: center;
+    color: #1c1e21;
+}
+
 .txt-head--sm {
     font-size: 12px;
     color: #606770;
@@ -162,6 +173,15 @@ p, h1 {
 
 .foot-link:hover {
     text-decoration: underline;
+}
+
+a.btn-return.btn-submit {
+    top: 112px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-submit {
